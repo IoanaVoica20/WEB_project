@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="stylesheet" href="../css/AlertsStyle.css">
+    <link rel="stylesheet" href="../css/FooterStyle.css">
+    <script src="../node_modules/crypto-js/crypto-js.js"></script>
+</head>
+<body>
+    <div id="alertBox" class="alert-box">
+        <div class="alert-content"> 
+            <img id="alertImage" class="alert-image">
+            <h2 id="alertText"></h2>
+            <button id="alertButton" type="alert">OK</button>
+        </div>
+    </div>
+    <div class="container" >
+    <div class="wrapper_imgs">
+        <img src="../images/login/log6.jpg">
+        <img src="../images/login/log1.jpg">
+        <img src="../images/login/log2.jpg">
+        <img src="../images/login/log3.jpg">
+        <img src="../images/login/log4.jpg">
+        <img src="../images/login/log5.jpg">
+    </div>
+    <div class="card">
+    <div class="inner-box" id="cards">
+    <div class="card-front">
+        <h2>Login here</h2>
+        <form id="loginForm">
+            <input class="input-box" type="email" id="Email" name="login-email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder="enter your email" required>
+            <input class="input-box" type="password" id="pass" name="login-password" placeholder="enter your password" required>
+            <input id="agreeCheckbox" type="checkbox"><span id="agreeSpan">Agree with terms</span>
+            <button class="login-btn" type="submit" id="login">Login</button>
+        </form>
+        <button type="sign" class="Buton" onclick="signin()">CreateAccount</button>
+        <a href="#" onclick="forgot()">Forgot Password</a>
+    </div>
+    <div class="card-back">
+        <h2>Register here</h2>
+        <form  id="registrationForm">
+            <input class="input-box" type="text" placeholder="enter your name" id="name" name = "name" required>
+            <input class="input-box" type="email" placeholder="enter your email" id="email" name = "email" required>
+            <input class="input-box" type="password" placeholder="enter a password" id="password" name = "password" required>
+            <input class="input-box" type="password" placeholder="enter again password" id="password2" name="password2" required>
+            <button class="login-btn" type="submit" id="submit">Sign Up</button>
+            <input type="checkbox" id="checkbox" name="check"><span id="agree">Agree with terms</span>
+        </form>
+        <button type="sign" class="Buton" onclick="login()">I've an account</button>
+        <a href="#" onclick="forgot()">Forgot Password</a>
+    </div>
+    <div class="card-forgot">
+        <h2>Password Recover</h2>
+        <form  id="forgotForm">
+            <input class="input-box" type="email" placeholder="enter your email" id="f_email" name = "f_email" required>
+            <input class="input-box" type="password" placeholder="enter a password" id="f_password" name = "f_password" required>
+            <input class="input-box" type="password" placeholder="enter again password" id="f_password2" name="f_password2" required>
+            <button class="login-btn" type="submit" id="done">Done</button>
+        </form>
+        <a href="#" onclick="login()">Go to Login</a>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    
+    <script src="../js_docs/LoginPage.js"></script>
+
+</body>
+</html>

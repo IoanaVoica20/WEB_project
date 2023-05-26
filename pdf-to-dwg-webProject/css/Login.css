@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    overflow: hidden; 
+    font-size: 16px;
+    font-family: poppins;
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} 
+
+.wrapper_imgs{
+    
+    position: absolute;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    animation: slide 20s ease infinite;   
+    z-index: -1;
+    
+}
+
+.wrapper_imgs img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    max-width: 100%;  
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0%);
+    }
+    10%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-300%);
+    }
+    85%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    } 
+}
+
+.card
+{
+    background-color: rgba(0,0,0,0.5);
+    margin:auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    width: 350px;
+    height: 500px;
+    z-index: 2;
+    perspective: 1000px;
+}
+
+.inner-box
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card-front, .card-back, .card-forgot{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: cover;
+    backface-visibility: hidden;
+}
+
+.card-back
+{
+    transform: rotateY(180deg);
+}
+.card-forgot
+{
+    backface-visibility: hidden;
+    transform: rotateY(90deg);
+}
+
+.card h2{
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.input-box{
+    margin: 5px 0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 12px;
+    font-style: italic;
+    font-family: poppins;
+}
+
+button{
+    background-color: #ad0606;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+button[type=sign]{
+    background-color: #9f9999;
+    margin-bottom: 5%;
+}
+
+span{
+   
+    font-size: 14px;
+    color: #ddd;
+}
+span a{
+    color: #cad2f0;
+}
+
+.card a
+{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 5%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.placeholder-red::placeholder {
+    color: red;
+}
+
+.check-red {
+    color: #ad0606;
+    text-shadow: #fff;
+}
+

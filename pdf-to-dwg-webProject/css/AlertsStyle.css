@@ -1,0 +1,41 @@
+.alert-box {
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(250,250,252,0.9);
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+    
+}
+
+.alert-image{
+    width: 50px;
+}
+  
+.alert-content {
+    margin-bottom: 20px;
+   
+}
+#alertText {
+    color: black;
+}
+button[type="alert"]{
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: #ad0606;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0;
+}

@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/first/main3.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+
+}
+
+    /* ////////////////// bara sus meniu \\\\\\\\\\\\\\\\\ */
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 40px;
+    cursor: pointer; 
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.menu-button{
+    background-color: #9f9999;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+    font-style: italic;
+    font-family: poppins
+}
+    /* //////////////////\\\\\\\\\\\\\\\\\ */
+
+
+    /* /////////////// impartire fereastra \\\\\\\\\\\\ */
+.row
+{
+   
+    display: flex;
+    align-items: center;
+    height: 88%; 
+}
+
+.col
+{
+    flex-basis: 50%;
+    
+}
+    /* ////////////////////////\\\\\\\\\\\\\\\\\\ */
+
+/* /////////////   partea din dreapta   \\\\\\\\\\\\\\\\\\  */
+
+.col[type=col_2]
+{
+    background-color: rgba(0,0,0,0.6);
+    margin:auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    min-height: 450px;
+}
+
+h2{
+    text-align: center;
+    color:aliceblue;
+    font-size: 20px;
+}
+
+.col form{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed rgba(173,6,6);
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+form img{
+    width: 40px;
+}
+
+form p{
+    margin-top: 15px;
+    color:aliceblue;
+}
+
+section .row{
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+img[type=file]{
+    width: 35px;
+}
+
+section .details span{
+    font-size: 14px;
+    color:aliceblue;
+}
+
+.progress-area .row .content{
+    width: 100%;
+    margin-left: 15px;
+    
+}
+
+.progress-area .details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.progress-area .content .progress-bar{
+    height: 6px;
+    width: 90%;
+    margin-bottom: 4px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.content .progress-bar .progress
+{
+    border-radius: inherit;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(173,6,6);
+} 
+
+.uploaded-area{
+    max-height: 190px;
+    overflow: scroll;
+}
+
+.uploaded-area.onprogress{
+    max-height: 150px;
+}
+
+.uploaded-area::-webkit-scrollbar{
+    width: 0px;
+}
+
+.uploaded-area .row .content{
+    width: 100%;
+    margin-left: 15px;
+}
+
+.uploaded-area .row .details{
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+ 
+    /* /////////////////// partea din stanga \\\\\\\\\\\\\\\\ */
+        /* //////////////////// butoanele de jos \\\\\\\\\\\\\\\\\\\ */
+.col[type=col_1]
+{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin:auto;
+    padding: 20px;
+    
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    
+}
+
+.option
+{
+    width: 120px;
+    height: 160px;
+    border-radius: 10px;
+    border-color:transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 15px;
+    background-color: rgba(0,0,0,0.6);
+    transition: transform 0.5s;
+    color: #fff;
+    align-items: baseline;
+    margin-top: 10px;
+}
+
+button[type=convert]
+{
+    background-color: rgba(173,6,6,0.8);
+}
+
+.option:hover
+{
+    transform: translateY(-10px);
+}
+        /* ///////////////////\\\\\\\\\\\\\\\\\\\\\\ */
+
+        
+
+        /* ////////////////// convert area \\\\\\\\\\\\\\ */
+.convert-area
+{
+   
+    
+    border-radius: 5px;
+    
+    height: 275px;
+   
+    display: grid;
+    place-items: center;
+    min-width: 40px;
+}
+
+.circular-progress
+{
+    position: relative;
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    
+}
+
+.circular-progress:before
+{
+    content:"";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+.value-container
+{
+    position: relative;
+    font-style: 50px;
+    color: aliceblue;
+}
+
+
+        /* ///////////////////\\\\\\\\\\\\\\\\\\\\\\ */
+    /* ///////////////////\\\\\\\\\\\\\\\\\\\\\\ */
+/* ///////////////////\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+/* //////////////// bara de jos \\\\\\\\\ */
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+/* ///////////////////\\\\\\\\\\\\\\\\\\\\\\ */

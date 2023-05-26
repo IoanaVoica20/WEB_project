@@ -1,0 +1,29 @@
+.footer{
+    
+    width: 100%;
+    padding: 6px 15%;
+    background: #333;
+    color:#efefef;
+    display: flex;
+}
+
+.footer div{
+    text-align: center;
+
+}
+
+.footer div h3{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footer div p,a{
+    font-size: 12px;
+    color: aliceblue;
+    font-style: italic;
+}
+
+.footer .col-1{
+    display: flex;
+    flex-direction: column;
+}

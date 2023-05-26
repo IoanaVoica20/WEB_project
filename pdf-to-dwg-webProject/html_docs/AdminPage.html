@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href="../css/FooterStyle.css"/>
+    <link rel = "stylesheet" href="../css/AlertsStyle.css"/>
+    <link rel = "stylesheet" href="../css/AdminStyle.css"/>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="alertBox" class="alert-box" height="400px">
+        <div class="alert-content" > 
+            <img id="alertImage" class="alert-image">
+            <h2 id="alertText"></h2>
+            <button id="alertButton" type="alert">STERGETI</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/first/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><button class ="menu-button" id="Login_button_1">LOGOUT</button></li>
+                </ul>
+            </nav>
+            <img src="../images/first/menu.png" class="menu-icon">
+        </div>
+		<div class="stats">
+			<div class="stat">
+                <img src="../images/admin/users.png">
+				<h3>Total Users</h3>
+				<p id="no_users"></p>
+			</div>
+			<div class="stat">
+                <img src="../images/admin/download.png">
+				<h3>Downloads today</h3>
+				<p>600</p>
+			</div>
+			<div class="stat">
+                <img src="../images/admin/likes.png">
+				<h3>Likes</h3>
+				<p>3</p>
+			</div>
+		</div>
+		<h2>User Management</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th></th>
+                
+            </tr>
+        </table>
+        <div class="user-area">
+        <table id="user_table">   
+        </table>
+        </div>
+    
+		
+    </div>
+    <div class="footer">
+        <div class="col-1">
+            <h3>USEFUL LINKS</h3>
+            <a href="#">Help</a>
+            <a href="#">Find me on linkDin</a>
+        </div>
+        <div class="col-2">
+            <h3>CONTACT</h3>
+            <p>Ioana Voica</p>
+            <p>mail: ioana.voica@gmail.com</p>
+            <p>tel: 07*******</p>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <script src="../js_docs/AdminPage.js"></script>
+    
+</body>
+</html>
